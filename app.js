@@ -52,3 +52,5 @@ function mostrarContenidoBiblia(seccion){
 
     document.getElementById("contenidoBiblia").innerHTML = contenido;
 }
+mostrarContenidoBiblia()
+
