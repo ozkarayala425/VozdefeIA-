@@ -49,6 +49,7 @@ function mostrarContenidoBiblia(seccion){
         Fe, oración, amor, perdón y esperanza.
         </p>`;
     }
+    
 
     document.getElementById("contenidoBiblia").innerHTML = contenido;
 }
@@ -103,3 +104,5 @@ function mostrarContenidoBiblia(seccion){
 function pruebaVozDeFeIA(){
     alert("✅ VozDeFeIA está conectado correctamente con app.js");
 }
+
+enviarMensaje()
