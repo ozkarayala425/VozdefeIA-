@@ -100,7 +100,7 @@ function mostrarContenidoBiblia(seccion){
     }
 
     document.getElementById("contenidoBiblia").innerHTML = contenido;
-}
+
 function pruebaVozDeFeIA(){
     alert("✅ VozDeFeIA está conectado correctamente con app.js");
 }
