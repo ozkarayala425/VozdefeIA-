@@ -105,4 +105,19 @@ function pruebaVozDeFeIA(){
     alert("✅ VozDeFeIA está conectado correctamente con app.js");
 }
 
-enviarMensaje()
+// Código que ya tienes arriba
+
+
+// Nueva función para el Chat Bíblico
+function enviarMensaje(){
+
+    let mensaje = document.getElementById("mensaje").value;
+
+    if(mensaje === ""){
+        alert("Escribe una pregunta bíblica");
+        return;
+    }
+
+    alert("Tu pregunta fue recibida: " + mensaje);
+
+}
