@@ -137,3 +137,25 @@ nav button{
 .biblioteca-card p{
     color:white;
 }
+.biblioteca-card{
+    background:#16213e;
+    border:1px solid #00d4aa;
+    border-radius:15px;
+    padding:15px;
+    margin:15px 0;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.biblioteca-card:hover{
+    background:#1f4068;
+}
+
+.biblioteca-card h3{
+    color:#00d4aa;
+    margin:0;
+}
+
+.biblioteca-card p{
+    color:white;
+}
