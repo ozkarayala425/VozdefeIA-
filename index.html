@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>VozDeFeIA - Chat Bíblico</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>𓂀 VozDeFeIA</h1>
+    <p>Inteligencia Artificial con propósito bíblico</p>
+</header>
+
+<nav>
+    <button onclick="mostrarSeccion('inicio')">Inicio</button>
+    <button onclick="mostrarSeccion('chat')">Chat Bíblico</button>
+    <button onclick="mostrarSeccion('historias')">Historias Bíblicas</button>
+    <button onclick="mostrarSeccion('versiculos')">Versículos</button>
+    <button onclick="mostrarSeccion('reflexiones')">Reflexiones</button>
+    <button onclick="mostrarSeccion('oraciones')">Oraciones</button>
+</nav>
+
+<main>
+
+<section id="inicio" class="seccion">
+    <h2>Bienvenido a VozDeFeIA</h2>
+    <p>
+    Una aplicación creada para aprender, reflexionar y conocer más de la Palabra de Dios.
+    </p>
+</section>
+
+<section id="chat" class="seccion" style="display:none;">
+    <h2>Chat Bíblico</h2>
+
+    <div id="chat-box"></div>
+
+    <input 
+    id="mensaje" 
+    type="text" 
+    placeholder="Escribe tu pregunta bíblica...">
+
+    <button onclick="enviarMensaje()">Enviar</button>
+</section>
+
+<section id="historias" class="seccion" style="display:none;">
+<h2>Historias Bíblicas</h2>
+<p>Explora historias de personajes de la Biblia.</p>
+</section>
+
+<section id="versiculos" class="seccion" style="display:none;">
+<h2>Versículos</h2>
+<p>Encuentra palabras de esperanza y fe.</p>
+</section>
+
+<section id="reflexiones" class="seccion" style="display:none;">
+<h2>Reflexiones</h2>
+<p>Mensajes para fortalecer tu vida espiritual.</p>
+</section>
+
+<section id="oraciones" class="seccion" style="display:none;">
+<h2>Oraciones</h2>
+<p>Momentos de oración y acercamiento a Dios.</p>
+</section>
+
+</main>
+
+
+<footer>
+<p>𓂀 OSCAR AYALA</p>
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
