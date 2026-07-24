@@ -109,26 +109,7 @@ function pruebaVozDeFeIA(){
 
 
 // Nueva función para el Chat Bíblico
-function enviarMensaje(){
 
-    let mensaje = document.getElementById("mensaje").value;
-
-    if(mensaje === ""){
-        alert("Escribe una pregunta bíblica");
-        return;
-    }
-
-    let chat = document.getElementById("chat-box");
-
-    chat.innerHTML += `
-    <p><b>🙏 Tú:</b> ${mensaje}</p>
-    <p><b>🤖 VozDeFeIA:</b> Estoy preparando una respuesta bíblica para ti.</p>
-    <hr>
-    `;
-
-    document.getElementById("mensaje").value = "";
-
-}
 
     let mensaje = document.getElementById("mensaje").value;
 
