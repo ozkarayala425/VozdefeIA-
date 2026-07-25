@@ -90,31 +90,21 @@ function mostrarContenidoBiblia(seccion){
 }
 
 
-function enviarMensaje(){
+let respuesta = "Todavía estoy aprendiendo sobre ese tema bíblico.";
 
-    let mensaje = document.getElementById("mensaje").value.toLowerCase();
+for(let personaje in baseBiblica){
 
-    if(mensaje === ""){
-        alert("Escribe una pregunta bíblica");
-        return;
+    if(mensaje.includes(personaje)){
+
+        respuesta =
+        baseBiblica[personaje].historia +
+        "<br><br>📖 Versículo: " +
+        baseBiblica[personaje].versiculo;
+
+        break;
     }
 
-    let respuesta = "Todavía estoy aprendiendo sobre ese tema bíblico.";
-
-    if(mensaje.includes("moises") || mensaje.includes("moisés")){
-        respuesta = baseBiblica.moises.historia +
-        "<br><br>📖 Versículo: " + baseBiblica.moises.versiculo;
-    }
-
-    else if(mensaje.includes("jesus") || mensaje.includes("jesús")){
-        respuesta = baseBiblica.jesus.historia +
-        "<br><br>📖 Versículo: " + baseBiblica.jesus.versiculo;
-    }
-
-    else if(mensaje.includes("david")){
-        respuesta = baseBiblica.david.historia +
-        "<br><br>📖 Versículo: " + baseBiblica.david.versiculo;
-    }
+}
 
 
     let chat = document.getElementById("chat-box");
