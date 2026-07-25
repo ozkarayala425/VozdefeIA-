@@ -111,13 +111,40 @@ function pruebaVozDeFeIA(){
 // Nueva función para el Chat Bíblico
 
 
-    let mensaje = document.getElementById("mensaje").value;
+    function enviarMensaje(){
+
+    let mensaje = document.getElementById("mensaje").value.toLowerCase();
 
     if(mensaje === ""){
         alert("Escribe una pregunta bíblica");
         return;
     }
 
-    alert("Tu pregunta fue recibida: " + mensaje);
+    let respuesta = "Todavía estoy aprendiendo sobre ese tema bíblico.";
+
+    if(mensaje.includes("moisés") || mensaje.includes("moises")){
+        respuesta = baseBiblica.moises.historia + 
+        "<br><br>📖 Versículo: " + baseBiblica.moises.versiculo;
+    }
+
+    else if(mensaje.includes("jesús") || mensaje.includes("jesus")){
+        respuesta = baseBiblica.jesus.historia + 
+        "<br><br>📖 Versículo: " + baseBiblica.jesus.versiculo;
+    }
+
+    else if(mensaje.includes("david")){
+        respuesta = baseBiblica.david.historia + 
+        "<br><br>📖 Versículo: " + baseBiblica.david.versiculo;
+    }
+
+    let chat = document.getElementById("chat-box");
+
+    chat.innerHTML += `
+    <p><b>🙏 Tú:</b> ${mensaje}</p>
+    <p><b>🤖 VozDeFeIA:</b><br>${respuesta}</p>
+    <hr>
+    `;
+
+    document.getElementById("mensaje").value = "";
 
 }
