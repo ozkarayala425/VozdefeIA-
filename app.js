@@ -29,11 +29,45 @@ function mostrarContenidoBiblia(seccion){
     }
 
     else if(seccion === "personajes"){
-        contenido = `
-        <h2>👥 Personajes Bíblicos</h2>
-        <p>
-        Jesús, Moisés, David, Abraham, Pablo y muchos más.
-        </p>`;
+    contenido = `
+    <h2>👥 Personajes Bíblicos</h2>
+
+    <div class="biblioteca-card">
+    <h3>👤 Moisés</h3>
+    <p>${baseBiblica.moises.historia}</p>
+    <p>📖 ${baseBiblica.moises.versiculo}</p>
+    </div>
+
+    <div class="biblioteca-card">
+    <h3>✝️ Jesús</h3>
+    <p>${baseBiblica.jesus.historia}</p>
+    <p>📖 ${baseBiblica.jesus.versiculo}</p>
+    </div>
+
+    <div class="biblioteca-card">
+    <h3>👑 David</h3>
+    <p>${baseBiblica.david.historia}</p>
+    <p>📖 ${baseBiblica.david.versiculo}</p>
+    </div>
+
+    <div class="biblioteca-card">
+    <h3>🌊 Noé</h3>
+    <p>${baseBiblica.noe.historia}</p>
+    <p>📖 ${baseBiblica.noe.versiculo}</p>
+    </div>
+
+    <div class="biblioteca-card">
+    <h3>⭐ Abraham</h3>
+    <p>${baseBiblica.abraham.historia}</p>
+    <p>📖 ${baseBiblica.abraham.versiculo}</p>
+    </div>
+
+    <div class="biblioteca-card">
+    <h3>📜 Pablo</h3>
+    <p>${baseBiblica.pablo.historia}</p>
+    <p>📖 ${baseBiblica.pablo.versiculo}</p>
+    </div>
+    `;
     }
 
     else if(seccion === "historias"){
