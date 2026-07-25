@@ -118,4 +118,6 @@ let chat = document.getElementById("chat-box");
 
     document.getElementById("mensaje").value = "";
 
+}document.getElementById("mensaje").value = "";
+
 }
