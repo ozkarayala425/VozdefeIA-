@@ -105,7 +105,7 @@ for(let personaje in baseBiblica){
     }
 
 }
-
+let chat = document.getElementById("chat-box");
 
     let chat = document.getElementById("chat-box");
 
