@@ -1,3 +1,4 @@
+console.log("app.js cargado correctamente");
 function mostrarSeccion(seccion){
 
     document.querySelectorAll(".seccion").forEach(function(div){
