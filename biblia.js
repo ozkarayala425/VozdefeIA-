@@ -19,7 +19,7 @@ moises {
   historia: "Moisés fue llamado por Dios para sacar al pueblo de Israel de la esclavitud en Egipto. Dios habló con él desde la zarza ardiente, abrió el Mar Rojo por medio de él y le entregó los Diez Mandamientos en el monte Sinaí.",
   versiculo: "Éxodo 3:10"
 },
-Jesús {
+Jesús: {
   nombre: "Jesús",
   palabras: [
     "jesus",
