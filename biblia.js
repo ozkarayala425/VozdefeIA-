@@ -23,7 +23,7 @@ jesus: {
   nombre: "jesus",
   palabras: [
     "jesus",
-    "jesús",
+    "jesus",
     "cristo",
     "mesias",
     "mesías",
