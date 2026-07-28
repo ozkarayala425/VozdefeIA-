@@ -128,11 +128,10 @@ function enviarMensaje(){
 
 
     
-let mensaje = document.getElementById("mensaje").value
-.toLowerCase()
-.normalize("NFD")
-.replace(/[\u0300-\u036f]/g, "");
 
+document.getElementById("mensaje").value = "";
+
+}
     if(mensaje === ""){
 
         alert("Escribe una pregunta bíblica");
