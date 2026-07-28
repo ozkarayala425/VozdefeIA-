@@ -46,7 +46,22 @@ Jesús: {
     historia: "David fue el segundo rey de Israel. Venció al gigante Goliat confiando en Dios y escribió muchos de los Salmos.",
     versiculo: "1 Samuel 17"
   },
-
+david: {
+  nombre: "David",
+  palabras: [
+    "david",
+    "goliat",
+    "gigante",
+    "rey de israel",
+    "salmos",
+    "arpa",
+    "pastor",
+    "hijo de isai",
+    "isai"
+  ],
+  historia: "David fue un pastor escogido por Dios para ser rey de Israel. Derrotó al gigante Goliat confiando en el poder de Dios y escribió muchos de los Salmos.",
+  versiculo: "1 Samuel 17"
+},
   noe: {
     nombre: "Noé",
     historia: "Noé fue un hombre justo que caminó con Dios. Por obediencia construyó el arca y Dios lo usó para preservar la vida durante el diluvio.",
