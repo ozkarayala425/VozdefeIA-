@@ -127,8 +127,11 @@ function mostrarContenidoBiblia(seccion){
 function enviarMensaje(){
 
 
-    let mensaje = document.getElementById("mensaje").value.toLowerCase();
-
+    
+let mensaje = document.getElementById("mensaje").value
+.toLowerCase()
+.normalize("NFD")
+.replace(/[\u0300-\u036f]/g, "");
 
     if(mensaje === ""){
 
