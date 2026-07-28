@@ -142,22 +142,29 @@ function enviarMensaje(){
     let respuesta = "Todavía estoy aprendiendo sobre ese tema bíblico.";
 
 
-    for(let personaje in baseBiblica){
+    for (let personaje in baseBiblica) {
 
+    let datos = baseBiblica[personaje];
 
-        if(mensaje.includes(personaje)){
+    if (datos.palabras) {
 
+        for (let palabra of datos.palabras) {
 
-            respuesta = 
-            baseBiblica[personaje].historia +
-            "<br><br>📖 Versículo: " +
-            baseBiblica[personaje].versiculo;
+            if (mensaje.includes(palabra)) {
 
+                respuesta =
+                    datos.historia +
+                    "<br><br>📖 Versículo: " +
+                    datos.versiculo;
 
-            break;
-
+                break;
+            }
         }
+    }
 
+    if (respuesta !== "Todavía estoy aprendiendo sobre ese tema bíblico.") {
+        break;
+    }
     }
 
 
