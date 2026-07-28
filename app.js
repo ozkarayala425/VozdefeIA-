@@ -176,7 +176,7 @@ function enviarMensaje(){
     `;
 
 
-    document.getElementById("mensaje").value = "";
-
-
-}
+    let mensaje = document.getElementById("mensaje").value
+  .toLowerCase()
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "");
