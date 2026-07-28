@@ -19,8 +19,8 @@ moises: {
   historia: "Moisés fue llamado por Dios para sacar al pueblo de Israel de la esclavitud en Egipto. Dios habló con él desde la zarza ardiente, abrió el Mar Rojo por medio de él y le entregó los Diez Mandamientos en el monte Sinaí.",
   versiculo: "Éxodo 3:10"
 },
-Jesús: {
-  nombre: "Jesus",
+jesus: {
+  nombre: "jesus",
   palabras: [
     "jesus",
     "jesús",
@@ -36,7 +36,7 @@ Jesús: {
     "resurrección",
     "evangelios"
   ],
-  historia: "Jesús es el Hijo de Dios y el Salvador del mundo. Predicó el Reino de Dios, realizó milagros, murió en la cruz por nuestros pecados y resucitó al tercer día.",
+  historia: "jesus es el Hijo de Dios y el Salvador del mundo. Predicó el Reino de Dios, realizó milagros, murió en la cruz por nuestros pecados y resucitó al tercer día.",
   versiculo: "Juan 3:16"
 },
   
