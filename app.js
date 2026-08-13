@@ -1,3 +1,4 @@
+
 function mostrarSeccion(seccion) {
 
     document.querySelectorAll(".seccion").forEach(function(div) {
