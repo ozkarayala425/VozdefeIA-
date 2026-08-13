@@ -11,3 +11,4 @@ function mostrarSeccion(seccion) {
         elemento.style.display = "block";
     }
 }
+alert("APP.JS CARGADO");
