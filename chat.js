@@ -1,1 +1,2 @@
 
+alert("CHAT.JS FUNCIONA");
