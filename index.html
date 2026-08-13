@@ -1,275 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VozDeFeIA - Chat Bíblico</title>
+    <title>VozDeFeIA - Chat Bíblico</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header>
-    <div class="logo">
-        <p class="firma">𓂀 OSCAR AYALA</p>
-        <h1>VozDeFeIA</h1>
-        <p>Inteligencia Artificial al servicio de la Palabra de Dios</p>
-    </div>
-<nav>
-    <button onclick="mostrarSeccion('chat')">📖 Chat Bíblico</button>
-    <button onclick="mostrarSeccion('historias')">📜 Historias Bíblicas</button>
-    <button onclick="mostrarSeccion('versiculos')">✨ Versículos</button>
-    <button onclick="mostrarSeccion('reflexiones')">💡 Reflexiones</button>
-    <button onclick="mostrarSeccion('oraciones')">🙏 Oraciones</button>
-    <button onclick="mostrarSeccion('biblioteca')">📚 Biblioteca Bíblica</button>
 
-</nav>
+<header>
+
+    <div class="logo">
+
+        <p class="firma">𓂀 OSCAR AYALA</p>
+
+        <h1>VozDeFeIA</h1>
+
+        <p>
+            Inteligencia Artificial al servicio de la Palabra de Dios
+        </p>
+
+    </div>
+
+
+    <nav>
+
+        <button onclick="mostrarSeccion('chat')">
+            📖 Chat Bíblico
+        </button>
+
+        <button onclick="mostrarSeccion('historias')">
+            📜 Historias Bíblicas
+        </button>
+
+        <button onclick="mostrarSeccion('versiculos')">
+            ✨ Versículos
+        </button>
+
+        <button onclick="mostrarSeccion('reflexiones')">
+            💡 Reflexiones
+        </button>
+
+        <button onclick="mostrarSeccion('oraciones')">
+            🙏 Oraciones
+        </button>
+
+        <button onclick="mostrarSeccion('biblioteca')">
+            📚 Biblioteca Bíblica
+        </button>
+
+    </nav>
+
+</header>
+
 
 <main>
 
+
+<!-- ========================= -->
+<!-- INICIO -->
+<!-- ========================= -->
+
 <section id="inicio" class="seccion">
+
     <h2>Bienvenido a VozDeFeIA</h2>
+
     <p>
-    Una aplicación creada para aprender, reflexionar y conocer más de la Palabra de Dios.
+        Una aplicación creada para aprender,
+        reflexionar y conocer más de la Palabra de Dios.
     </p>
+
 </section>
+
+
+
+<!-- ========================= -->
+<!-- CHAT BÍBLICO -->
+<!-- ========================= -->
 
 <section id="chat" class="seccion" style="display:none;">
-    <h2>Chat Bíblico</h2>
+
+    <h2>📖 Chat Bíblico</h2>
+
+    <p>
+        Pregunta sobre personajes,
+        historias y enseñanzas de la Biblia.
+    </p>
+
 
     <div id="chat-box"></div>
-<input 
-id="mensaje" 
-type="text" 
-placeholder="Escribe tu pregunta bíblica...">
 
-<button onclick="enviarMensaje()">Enviar</button>
+
+    <input
+        id="mensaje"
+        type="text"
+        placeholder="Escribe tu pregunta bíblica..."
+        autocomplete="off"
+    >
+
+
+    <button
+        type="button"
+        onclick="enviarMensaje()"
+    >
+        🙏 Enviar
+    </button>
 
 </section>
 
 
+
+<!-- ========================= -->
+<!-- BIBLIOTECA BÍBLICA -->
+<!-- ========================= -->
 
 <section id="biblioteca" class="seccion" style="display:none;">
 
-<h2>📚 Biblioteca Bíblica</h2>
-<div class="biblioteca-menu">
-
-
-<button onclick="mostrarContenidoBiblia('antiguo')">
-📜 Antiguo Testamento
-</button>
-
-<button onclick="mostrarContenidoBiblia('nuevo')">
-✝️ Nuevo Testamento
-</button>
-
-<button onclick="mostrarContenidoBiblia('personajes')">
-👥 Personajes Bíblicos
-</button>
-
-<button onclick="mostrarContenidoBiblia('historias')">
-📖 Historias Bíblicas
-</button>
-
-<button onclick="mostrarContenidoBiblia('temas')">
-✨ Temas Bíblicos
-</button>
-
-</div>
-<button onclick="mostrarContenidoBiblia('antiguo')">
-📜 Antiguo Testamento
-</button>
-
-<button onclick="mostrarContenidoBiblia('nuevo')">
-✝️ Nuevo Testamento
-</button>
-
-<button onclick="mostrarContenidoBiblia('personajes')">
-👥 Personajes Bíblicos
-</button>
-
-<button onclick="mostrarContenidoBiblia('historias')">
-📖 Historias Bíblicas
-</button>
-
-<button onclick="mostrarContenidoBiblia('temas')">
-✨ Temas Bíblicos
-</button>
-
-</div>
-
-    
-<p>
-Explora historias, personajes, libros y enseñanzas de la Biblia.
-</p>
-
-<div class="biblioteca-card">
-<h3>📖 Antiguo Testamento</h3>
-<p>Génesis, Éxodo, Salmos, Proverbios, Isaías...</p>
-</div>
-
-<div class="biblioteca-card">
-<h3>✝️ Nuevo Testamento</h3>
-<p>Mateo, Marcos, Lucas, Juan, Hechos, Romanos...</p>
-</div>
-<h4>📜 Antiguo Testamento (39 libros)</h4>
-
-<p>
-<b>Pentateuco:</b><br>
-Génesis · Éxodo · Levítico · Números · Deuteronomio
-</p>
-
-<p>
-<b>Libros Históricos:</b><br>
-Josué · Jueces · Rut · 1 Samuel · 2 Samuel ·
-1 Reyes · 2 Reyes · 1 Crónicas · 2 Crónicas ·
-Esdras · Nehemías · Ester
-</p>
-
-<p>
-<b>Libros Poéticos:</b><br>
-Job · Salmos · Proverbios · Eclesiastés · Cantares
-</p>
-
-<p>
-<b>Profetas Mayores:</b><br>
-Isaías · Jeremías · Lamentaciones · Ezequiel · Daniel
-</p>
-
-<p>
-<b>Profetas Menores:</b><br>
-Oseas · Joel · Amós · Abdías · Jonás · Miqueas ·
-Nahúm · Habacuc · Sofonías · Hageo · Zacarías · Malaquías
-</p>
-
-
-<div class="biblioteca-card">
-<h3>👥 Personajes Bíblicos</h3>
-<p>Jesús, Moisés, David, Pablo, Pedro y muchos más.</p>
-</div>
-
-
-  <div id="biblioteca" class="seccion">
-
-    <h2>📚 Biblioteca Bíblica</h2>
-<div id="contenidoBiblia"></div>
-    <p>
-    Explora la Palabra de Dios: libros, personajes, historias y enseñanzas bíblicas.
-    </p>
-
-    <div class="biblioteca-card">
-    <h3>📖 Libros de la Biblia</h3>
-
-    <h4>📜 Antiguo Testamento (39 libros)</h4>
-    <p>
-    Génesis, Éxodo, Levítico, Números, Deuteronomio,
-    Josué, Jueces, Rut, 1 Samuel, 2 Samuel...
-    </p>
-
-    <h4>✝️ Nuevo Testamento (27 libros)</h4>
-
-<p>
-<b>Evangelios:</b><br>
-Mateo · Marcos · Lucas · Juan
-</p>
-
-<p>
-<b>Historia:</b><br>
-Hechos de los Apóstoles
-</p>
-
-<p>
-<b>Cartas de Pablo:</b><br>
-Romanos · 1 Corintios · 2 Corintios · Gálatas ·
-Efesios · Filipenses · Colosenses ·
-1 Tesalonicenses · 2 Tesalonicenses ·
-1 Timoteo · 2 Timoteo · Tito · Filemón
-</p>
-
-<p>
-<b>Cartas Generales:</b><br>
-Hebreos · Santiago · 1 Pedro · 2 Pedro ·
-1 Juan · 2 Juan · 3 Juan · Judas
-</p>
-
-<p>
-<b>Profecía:</b><br>
-Apocalipsis
-</p>
-<div id="contenidoBiblia"></div>
-</div>
-
-    <div class="biblioteca-card">
-        <h3>👥 Personajes Bíblicos</h3>
-        <p>Jesús, Moisés, David, Pablo, Pedro y muchos más.</p>
-    </div>
-
-    <div class="biblioteca-card">
-        <h3>✨ Enseñanzas</h3>
-        <p>Fe, oración, amor, perdón y esperanza.</p>
-    </div>
-
-  </div>  
-    <div id="biblioteca" class="seccion">
-
     <h2>📚 Biblioteca Bíblica</h2>
 
-    <p>Selecciona un apartado para explorar la Palabra de Dios.</p>
+    <p>
+        Explora libros, personajes,
+        historias y enseñanzas de la Biblia.
+    </p>
 
-    <div class="biblioteca-card">
-        <h3>📖 Libros de la Biblia</h3>
+
+    <div class="biblioteca-menu">
+
+        <button
+            type="button"
+            onclick="mostrarContenidoBiblia('antiguo')"
+        >
+            📜 Antiguo Testamento
+        </button>
+
+
+        <button
+            type="button"
+            onclick="mostrarContenidoBiblia('nuevo')"
+        >
+            ✝️ Nuevo Testamento
+        </button>
+
+
+        <button
+            type="button"
+            onclick="mostrarContenidoBiblia('personajes')"
+        >
+            👥 Personajes Bíblicos
+        </button>
+
+
+        <button
+            type="button"
+            onclick="mostrarContenidoBiblia('historias')"
+        >
+            📖 Historias Bíblicas
+        </button>
+
+
+        <button
+            type="button"
+            onclick="mostrarContenidoBiblia('temas')"
+        >
+            ✨ Temas Bíblicos
+        </button>
+
     </div>
 
-    <div class="biblioteca-card">
-        <h3>👥 Personajes Bíblicos</h3>
+
+    <div id="contenidoBiblia">
+
+        <div class="biblioteca-card">
+
+            <h3>📖 Explora la Biblia</h3>
+
+            <p>
+                Selecciona una de las opciones
+                para comenzar.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="biblioteca-card">
-        <h3>📜 Historias Bíblicas</h3>
-    </div>
-
-    <div class="biblioteca-card">
-        <h3>✨ Temas Bíblicos</h3>
-    </div>
-
-</div>
-    
-    <input 
-    id="mensaje" 
-    type="text" 
-    placeholder="Escribe tu pregunta bíblica...">
-    <button onclick="enviarMensaje()">▶️ Enviar</button>
-
-<section id="historias" class="seccion" style="display:none;">
-<h2>Historias Bíblicas</h2>
-<p>Explora historias de personajes de la Biblia.</p>
 </section>
 
-<section id="versiculos" class="seccion" style="display:none;">
-<h2>Versículos</h2>
-<p>Encuentra palabras de esperanza y fe.</p>
+
+
+<!-- ========================= -->
+<!-- HISTORIAS -->
+<!-- ========================= -->
+
+<section
+    id="historias"
+    class="seccion"
+    style="display:none;"
+>
+
+    <h2>📜 Historias Bíblicas</h2>
+
+    <p>
+        Explora historias de personajes de la Biblia.
+    </p>
+
 </section>
 
-<section id="reflexiones" class="seccion" style="display:none;">
-<h2>Reflexiones</h2>
-<p>Mensajes para fortalecer tu vida espiritual.</p>
+
+
+<!-- ========================= -->
+<!-- VERSÍCULOS -->
+<!-- ========================= -->
+
+<section
+    id="versiculos"
+    class="seccion"
+    style="display:none;"
+>
+
+    <h2>✨ Versículos</h2>
+
+    <p>
+        Encuentra palabras de esperanza y fe.
+    </p>
+
 </section>
 
-<section id="oraciones" class="seccion" style="display:none;">
-<h2>Oraciones</h2>
-<p>Momentos de oración y acercamiento a Dios.</p>
+
+
+<!-- ========================= -->
+<!-- REFLEXIONES -->
+<!-- ========================= -->
+
+<section
+    id="reflexiones"
+    class="seccion"
+    style="display:none;"
+>
+
+    <h2>💡 Reflexiones</h2>
+
+    <p>
+        Mensajes para fortalecer tu vida espiritual.
+    </p>
+
 </section>
+
+
+
+<!-- ========================= -->
+<!-- ORACIONES -->
+<!-- ========================= -->
+
+<section
+    id="oraciones"
+    class="seccion"
+    style="display:none;"
+>
+
+    <h2>🙏 Oraciones</h2>
+
+    <p>
+        Momentos de oración y acercamiento a Dios.
+    </p>
+
+</section>
+
 
 </main>
 
 
+
+<!-- ========================= -->
+<!-- PIE DE PÁGINA -->
+<!-- ========================= -->
+
 <footer>
-<p>𓂀 OSCAR AYALA</p>
+
+    <p>𓂀 OSCAR AYALA</p>
+
 </footer>
 
+
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
 <script src="biblia.js"></script>
+
 <script src="app.js"></script>
 
+
 </body>
+
 </html>
